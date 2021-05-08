@@ -1,4 +1,4 @@
-# node-lecture-simple-crud
+# node-lecture-simple-crud 
 ## Simple crud Demo (node + koa2 + Mongodb)
 
 ### mongoddb connecting
@@ -12,3 +12,6 @@ npm install
 # start
 npm start 
 ```
+
+### Browser open
+http://127.0.0.1:3030
