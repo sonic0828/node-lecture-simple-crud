@@ -34,13 +34,15 @@ node-lecture-simple-crud/
 ## Install
 SSH into the server and perform the following installation
 
-**Install Node.js**
+**Step1 - Install Node.js**
 ``` bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -    
+```
+``` bash
 sudo apt-get install -y nodejs
 ```
 
-**Install MongoDB**
+**Step2 - Install MongoDB**
 ``` bash
 # Import the public key used by the package management system. 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - 
@@ -55,12 +57,12 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
-**Start MongoDB**
+**Step3 - Start MongoDB**
 ``` bash
- service mongod start
+service mongod start
 ```
 
-**Clone Project**
+**Step4 - Clone Project**
 ``` bash
 # /home/www
 git clone https://github.com/sonic0828/node-lecture-simple-crud 
@@ -70,22 +72,23 @@ cd node-lecture-simple-crud
 npm install
 ```
 
-**Install PM2**
+**Step5 - Install PM2**
 ``` bash
 npm install pm2 -g
 ```
 
 ## Start project
+**Running at foreground**
 ``` bash
-# Running at foreground
 npm start
+```
 
-# Running at background(start whith pm2)
+**Running at background(start whith pm2)**
+``` bash
 npm run prd
 ```
 
 ## Browser open
 http://127.0.0.1:3030
 
-## mongoddb connecting
-mongodb://127.0.0.1:27017
+Enjoy~
