@@ -45,6 +45,7 @@ sudo apt-get install -y nodejs
 ```
 
 ### Step2 - Install MongoDB
+MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
 ``` bash
 # Import the public key used by the package management system. 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - 
@@ -60,7 +61,6 @@ sudo apt-get install -y mongodb-org
 ```
 
 ### Step3 - Start MongoDB
-MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
 ``` bash
 service mongod start
 ```
