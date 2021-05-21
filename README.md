@@ -62,22 +62,21 @@ sudo apt-get install -y mongodb-org
 service mongod start
 ```
 
-**Step4 - Clone Project**
-``` bash
-# /home/www
-git clone https://github.com/sonic0828/node-lecture-simple-crud 
-
-# install Project
-cd node-lecture-simple-crud
-npm install
-```
-
-**Step5 - Install PM2**
+**Step4 - Install PM2**
 ``` bash
 npm install pm2 -g
 ```
 
 ## Start project
+**Clone Project**
+``` bash
+git clone https://github.com/sonic0828/node-lecture-simple-crud 
+```
+``` bash
+cd node-lecture-simple-crud
+npm install
+```
+
 **Running at foreground**
 ``` bash
 npm start
