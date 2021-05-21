@@ -32,7 +32,8 @@ node-lecture-simple-crud/
 ```
 
 ## Install
-SSH into the server and perform the following installation
+SSH server and execute the following command to install
+*Tencent Cloud must reset the initial password for remote login*
 
 **Step1 - Install Node.js**
 ``` bash
