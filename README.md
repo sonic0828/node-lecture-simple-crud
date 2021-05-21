@@ -70,7 +70,7 @@ npm install pm2 -g
 ```
 
 ## Start project
-**Clone Project**
+### Clone Project
 ``` bash
 git clone https://github.com/sonic0828/node-lecture-simple-crud 
 ```
@@ -79,7 +79,8 @@ cd node-lecture-simple-crud
 npm install
 ```
 
-**Running Project**
+### Running Project
+
 at foreground
 ``` bash
 npm start
