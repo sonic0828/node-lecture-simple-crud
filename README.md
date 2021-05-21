@@ -1,17 +1,91 @@
 # node-lecture-simple-crud 
-## Simple crud Demo (node + koa2 + Mongodb)
+Simple crud Demo (node + koa2 + Mongodb)
 
-### mongoddb connecting
-mongodb://127.0.0.1:27017
+Deploy applications on Tencent Cloud
 
-### start project
-``` bash
-# install
-npm install
+## Quickly started
+Use Linux `ubuntu` system
 
-# start
-npm start 
+## Project structure
+```
+node-lecture-simple-crud/
+├── README.md
+├── app.js
+├── bin
+│   └── www
+├── package-lock.json
+├── package.json
+├── public
+│   ├── async.js
+│   └── stylesheets
+│       └── style.css
+├── routes
+│   ├── index.js
+│   └── users.js
+├── schema
+│   └── index.js
+└── views
+    ├── detail.jade
+    ├── error.jade
+    ├── index.jade
+    └── layout.jade
 ```
 
-### Browser open
+## Install
+SSH into the server and perform the following installation
+
+**Install Node.js**
+``` bash
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -    
+sudo apt-get install -y nodejs
+```
+
+**Install MongoDB**
+``` bash
+# Import the public key used by the package management system. 
+wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - 
+
+# Create a list file for MongoDB.
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list 
+
+# Reload local package database. 
+sudo apt-get update 
+
+# Install the MongoDB packages.
+sudo apt-get install -y mongodb-org
+```
+
+**Start MongoDB**
+``` bash
+ service mongod start
+```
+
+**Clone Project**
+``` bash
+# /home/www
+git clone https://github.com/sonic0828/node-lecture-simple-crud 
+
+# install Project
+cd node-lecture-simple-crud
+npm install
+```
+
+**Install PM2**
+``` bash
+npm install pm2 -g
+```
+
+## Start project
+``` bash
+# Running at foreground
+npm start
+
+# Running at background(start whith pm2)
+npm run prd
+```
+
+## Browser open
 http://127.0.0.1:3030
+
+## mongoddb connecting
+mongodb://127.0.0.1:27017
