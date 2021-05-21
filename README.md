@@ -36,7 +36,7 @@ SSH server and execute the following command to install
 
 *Tencent Cloud must reset the initial password for remote login*
 
-**Step1 - Install Node.js**
+### Step1 - Install Node.js
 ``` bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -    
 ```
@@ -44,7 +44,7 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-**Step2 - Install MongoDB**
+### Step2 - Install MongoDB
 ``` bash
 # Import the public key used by the package management system. 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - 
@@ -59,12 +59,14 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
-**Step3 - Start MongoDB**
+### Step3 - Start MongoDB
+MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
 ``` bash
 service mongod start
 ```
 
-**Step4 - Install PM2**
+### Step4 - Install PM2
+PM2 is a daemon process manager that will help you manage and keep your application online 24/7
 ``` bash
 npm install pm2 -g
 ```
@@ -86,7 +88,7 @@ at foreground
 npm start
 ```
 
-at background(start whith pm2
+at background(start whith pm2)
 ``` bash
 npm run prd
 ```
