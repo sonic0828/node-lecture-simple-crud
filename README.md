@@ -33,6 +33,7 @@ node-lecture-simple-crud/
 
 ## Install
 SSH server and execute the following command to install
+
 *Tencent Cloud must reset the initial password for remote login*
 
 **Step1 - Install Node.js**
@@ -78,12 +79,13 @@ cd node-lecture-simple-crud
 npm install
 ```
 
-**Running at foreground**
+**Running Project**
+at foreground
 ``` bash
 npm start
 ```
 
-**Running at background(start whith pm2)**
+at background(start whith pm2
 ``` bash
 npm run prd
 ```
